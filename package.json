@@ -1,0 +1,17 @@
+{
+  "name": "test-dou",
+  "version": "1.0.0",
+  "description": "ui tests with cypress io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alejon13",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "3.1.0",
+    "eslint": "^5.4.0",
+    "moment": "2.22.2",
+    "npm": "^6.4.1"
+  }
+}
