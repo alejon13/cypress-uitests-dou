@@ -1,6 +1,4 @@
-
 export default class Page {
-
 
     constructor() {
         this.url = "";
@@ -8,9 +6,12 @@ export default class Page {
         this.domain = "dou.ua";
     }
 
+    openHomePage() {
+        cy.visit(this.protocol + this.domain);
+    }
 
-    open(url) {
-        cy.visit(this.protocol + this.domain + url)
+    openUrl(url) {
+        cy.visit(this.protocol + this.domain + url);
     }
 
     getTitle(){

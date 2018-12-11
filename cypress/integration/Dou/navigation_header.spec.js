@@ -6,7 +6,7 @@ let navigationHeadingPage = new NavigationHeadingPage;
 describe('Navigation header', function () {
 
     beforeEach(function() {
-        navigationHeadingPage.open("");
+        navigationHeadingPage.openHomePage();
     });
 
     it('Basic navigation', function () {
@@ -28,7 +28,6 @@ describe('Navigation header', function () {
         navigationHeadingPage.switchTo('Календарь');
         navigationHeadingPage.getTitle().should('eq', 'Календарь ИТ-событий | DOU');
         navigationHeadingPage._calendarTab.shouldHaveClass('sel');
-
     });
 
 });

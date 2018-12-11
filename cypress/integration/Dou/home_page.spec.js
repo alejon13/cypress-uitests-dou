@@ -6,7 +6,7 @@ let homePage = new HomePage();
 describe('Home page', function () {
 
     beforeEach(function() {
-        homePage.open("");
+        homePage.openHomePage();
     });
 
     it('Visit dou.ua', function () {
@@ -18,5 +18,12 @@ describe('Home page', function () {
         homePage._popularTopicsHeader.shouldHaveText('Популярное на форуме');
         homePage._topCommentsHeader.shouldHaveText('Обсуждают сейчас');
     });
+
+    it('The most popular topic', function () {
+        homePage._popularTopicsLabel.click();
+        homePage._popularTopicsRangeSelect.selectOption('за все время');
+        homePage._theMostPopularTopicLink.shouldHaveTextWithReplaceNbsp('Суровая реальность начинающих тестировщиков. ' +
+                                                                        'Пособие: что и как учить');
+        });
 
 });
