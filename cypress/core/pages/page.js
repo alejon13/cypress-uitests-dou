@@ -17,4 +17,8 @@ export default class Page {
     getTitle(){
         return cy.title();
     }
+
+    titleShouldHaveText(titleText){
+        cy.title().should('eq',titleText);
+    }
 }

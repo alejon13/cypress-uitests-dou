@@ -10,7 +10,7 @@ describe('Home page', function () {
     });
 
     it('Visit dou.ua', function () {
-        homePage.getTitle().should('eq', 'Сообщество программистов | DOU');
+        homePage.titleShouldHaveText('Сообщество программистов | DOU');
         homePage._homeTab.shouldHaveClass('sel');
         homePage._logo.shouldBeVisible();
         homePage._eventsHeader.shouldHaveText('События');
