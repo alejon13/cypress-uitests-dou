@@ -6,6 +6,7 @@ pipeline {
     stages {
 
         stage('checkout') {
+            steps {
                   checkout([$class: 'GitSCM',
                       branches: [[name: '*/master']],
                       doGenerateSubmoduleConfigurations: false,
@@ -14,6 +15,7 @@ pipeline {
                           url: 'ssh://git@github.com:alejon13/cypress-uitests-dou.git'
                       ]],
                   ])
+             }
         }
 
         stage('Dependencies') {
