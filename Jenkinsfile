@@ -7,7 +7,7 @@ pipeline {
 
         stage('Cloning Git') {
             steps {
-          git 'hhttps://github.com/alejon13/cypress-uitests-dou.git'
+          git 'https://github.com/alejon13/cypress-uitests-dou.git'
              }
         }
 
