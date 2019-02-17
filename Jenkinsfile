@@ -14,5 +14,5 @@ pipeline {
                 sh 'npm run cypress:run'
             }
         }
-
+    }
 }
