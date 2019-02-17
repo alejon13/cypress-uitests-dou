@@ -5,6 +5,12 @@ pipeline {
 
     stages {
 
+        stage('Cloning Git') {
+            steps {
+          git 'hhttps://github.com/alejon13/cypress-uitests-dou.git'
+             }
+        }
+
         stage('Dependencies') {
             steps {
                 sh 'npm i'
